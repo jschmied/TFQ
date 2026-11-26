@@ -1,0 +1,17 @@
+{
+  "format": "TFQ3",
+  "version": 3,
+  "tables": "pw_v3_tables.bin",
+  "tfq_shards": ["tfq3-00001-of-00001.tffpw"],
+  "residual_shards": ["residual.safetensors"],
+  "tfq_bytes": 2294320,
+  "residual_bytes": 2048,
+  "num_quantized_tensors": 4,
+  "num_residual_tensors": 1,
+  "tensors": [
+    {"name":"model.layers.0.mlp.gate_proj","role":"mlp","orig_shape":[4352,512],"pad_shape":[4352,512],"bits":4,"snr_db":23.26},
+    {"name":"model.layers.0.mlp.up_proj","role":"mlp","orig_shape":[4352,512],"pad_shape":[4352,512],"bits":4,"snr_db":23.2577},
+    {"name":"model.layers.0.self_attn.q_proj","role":"attn","orig_shape":[192,256],"pad_shape":[256,256],"bits":4,"snr_db":23.1172},
+    {"name":"model.layers.0.self_attn.o_proj","role":"attn","orig_shape":[256,256],"pad_shape":[256,256],"bits":4,"snr_db":23.1439}
+  ]
+}
